@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Exam-Portal/static/css/main.c2cab247.css",
+    "main.js": "/Exam-Portal/static/js/main.e0e53ab5.js",
+    "index.html": "/Exam-Portal/index.html",
+    "main.c2cab247.css.map": "/Exam-Portal/static/css/main.c2cab247.css.map",
+    "main.e0e53ab5.js.map": "/Exam-Portal/static/js/main.e0e53ab5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.e0e53ab5.js"
+  ]
+}
