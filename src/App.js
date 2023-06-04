@@ -12,8 +12,8 @@ export default function App() {
   return (<>
     <HashRouter>
       <Routes>
-        {/* <Route path="/" exact element={<Navigate to="/home" />} /> */}
-        <Route path="/" exact element={<Home />} />
+        <Route path="/" exact element={<Navigate to="/home" />} />
+        <Route path="/home" exact element={<Home />} />
         <Route path="/dashboard" exact element={<Dashboard />} />
         <Route path="/exam/:exam" exact element={<Exam />} />
         {/* <Route path="/*" exact element={<NotFound />} /> */}

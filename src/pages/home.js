@@ -31,7 +31,7 @@ export default function Home() {
         });
         
         const web3Modal = new Web3Modal({
-            // network: "goerli",
+            network: "goerli",
             cacheProvider: true
         });
         const connection = await web3Modal.connect().catch(_ => {
