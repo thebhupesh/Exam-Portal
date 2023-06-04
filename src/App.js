@@ -16,7 +16,7 @@ export default function App() {
         <Route path="/" exact element={<Home />} />
         <Route path="/dashboard" exact element={<Dashboard />} />
         <Route path="/exam/:exam" exact element={<Exam />} />
-        <Route path="/*" exact element={<NotFound />} />
+        {/* <Route path="/*" exact element={<NotFound />} /> */}
       </Routes>
     </HashRouter>
   </>);
