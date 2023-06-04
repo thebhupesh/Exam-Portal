@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Exam-Portal/static/css/main.c2cab247.css",
-    "main.js": "/Exam-Portal/static/js/main.de409263.js",
+    "main.js": "/Exam-Portal/static/js/main.ceaf1c88.js",
     "index.html": "/Exam-Portal/index.html",
     "main.c2cab247.css.map": "/Exam-Portal/static/css/main.c2cab247.css.map",
-    "main.de409263.js.map": "/Exam-Portal/static/js/main.de409263.js.map"
+    "main.ceaf1c88.js.map": "/Exam-Portal/static/js/main.ceaf1c88.js.map"
   },
   "entrypoints": [
     "static/css/main.c2cab247.css",
-    "static/js/main.de409263.js"
+    "static/js/main.ceaf1c88.js"
   ]
 }
