@@ -1,4 +1,5 @@
 {
+  "homepage": "http://thebhupesh.github.io/Exam-Portal",
   "name": "exam-portal",
   "version": "0.1.0",
   "private": true,
@@ -23,27 +24,32 @@
     "web3modal": "^1.9.12"
   },
   "scripts": {
-    "start": "BROWSER='google chrome' react-scripts start",
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
+      "react-app", 
       "react-app/jest"
     ]
   },
   "browserslist": {
     "production": [
       ">0.2%",
-      "not dead",
+      "not dead", 
       "not op_mini all"
     ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
+    "development": [ 
+      "last 1 chrome version", 
+      "last 1 firefox version", 
+      "last 1 safari version" 
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
