@@ -1,12 +1,13 @@
 import { Button, Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function Header({ connect, user, show, setShow, inExam }) {
     return (<>
         <Navbar expand="sm" variant="dark" bg="dark">
             <Container fluid>
-                <Navbar.Brand href={(!inExam) ? "/home" : ""} active="true">
+                <Navbar.Brand active="true">
                     <Row>
-                        <Col><h2 className="my-0">Exam Portal</h2></Col>
+                        {(!inExam) ? (<Link to="\home"><Col><h2 className="my-0">Exam Portal</h2></Col></Link>) : (<Col><h2 className="my-0">Exam Portal</h2></Col>)}
                         <Col className="p-0 my-auto"><p className="my-0">{(user.registered) ? ((user.isFaculty) ? " (Faculty)" : " (Student)") : ""}</p></Col>
                     </Row>
                 </Navbar.Brand>

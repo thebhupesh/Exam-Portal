@@ -138,12 +138,6 @@ export default function EvaluateExamModal({ contract, show, setShow, setLoader }
             message: ""
         });
     }
-
-    // useEffect(_ => {
-    //     if(contract && evaluate) {
-    //         evaluateExam();
-    //     }
-    // }, [evaluate, contract, evaluateExam]);
     
     return (<>
         <Modal show={evaluate} onHide={_ => setShow({...show, evaluate: null})} onShow={evaluateExam} centered>
