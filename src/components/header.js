@@ -1,5 +1,7 @@
-import { Button, Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import { Button, Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
+
+import Home from "../pages/home";
 
 export default function Header({ connect, user, show, setShow, inExam }) {
     return (<>
@@ -7,7 +9,7 @@ export default function Header({ connect, user, show, setShow, inExam }) {
             <Container fluid>
                 <Navbar.Brand active="true">
                     <Row>
-                        {(!inExam) ? (<Link to="\home"><Col><h2 className="my-0">Exam Portal</h2></Col></Link>) : (<Col><h2 className="my-0">Exam Portal</h2></Col>)}
+                        <Col><h2 className="my-0">{(!inExam) ? <Link to="/home" element={<Home />} className="text-white" style={{"textDecoration": "none"}}>Exam Portal</Link> : "Exam Portal"}</h2></Col>
                         <Col className="p-0 my-auto"><p className="my-0">{(user.registered) ? ((user.isFaculty) ? " (Faculty)" : " (Student)") : ""}</p></Col>
                     </Row>
                 </Navbar.Brand>
