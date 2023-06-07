@@ -72,14 +72,14 @@ export default function Exam() {
         const userData = await contract.getUser();
         const hasExam = await contract.userHasExam(Exam.id);
         const submittedStatus = await contract.examSubmitted(Exam.id);
-        const time = (new Date(decrypt(Exam.end)).valueOf() - new Date().valueOf())/60000 < decrypt(Exam.duration);
+        const time = (new Date(decrypt(Exam.end)).valueOf() - new Date().valueOf()) / 60000 < decrypt(Exam.duration);
         
         if(!userData.registered || userData.isFaculty || submittedStatus || time || !hasExam) {
             navigate("/404", { replace: true });
         }
         else {
-            const hours = Math.floor(decrypt(Exam.duration)/60);
-            const minutes = Math.floor(decrypt(Exam.duration) - hours*60);
+            const hours = Math.floor(decrypt(Exam.duration) / 60);
+            const minutes = Math.floor(decrypt(Exam.duration) - hours * 60);
 
             setTimer({
                 hours: hours,

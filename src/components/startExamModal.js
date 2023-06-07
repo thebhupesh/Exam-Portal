@@ -19,7 +19,7 @@ export default function StartExamModal({ contract, show, setShow, setLoader }) {
         });
 
         const Data = await contract.examSubmitted(startExam.id);
-        const time = (new Date(decrypt(startExam.end)).valueOf() - new Date().valueOf())/60000 < decrypt(startExam.duration);
+        const time = (new Date(decrypt(startExam.end)).valueOf() - new Date().valueOf()) / 60000 < decrypt(startExam.duration);
         if(Data) {
             setStart({
                 status: false,

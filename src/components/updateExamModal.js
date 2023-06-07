@@ -24,7 +24,7 @@ export default function UpdateExamModal({ contract, show, setShow, setLoader }) 
 
     const getMaxDuration = _ => {
         if(exam.start && exam.end) {
-            return (new Date(decrypt(exam.end)).valueOf() - new Date(decrypt(exam.start)).valueOf())/60000;
+            return (new Date(decrypt(exam.end)).valueOf() - new Date(decrypt(exam.start)).valueOf()) / 60000;
         }
         else return 1;
     }
